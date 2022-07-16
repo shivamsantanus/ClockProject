@@ -1,0 +1,411 @@
+.maincontainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+
+.leftside
+{
+    display: grid;
+    height: 700px;
+    width: 700px;
+    /* background-color: red; */
+    /* border: 1px solid red; */
+    grid-template-rows: repeat(7,1fr);
+
+}
+
+.rightside
+{
+    /* background-color: aquamarine; */
+    height: 700px;
+    width: 700px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+.runClock
+{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+#lb1
+{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.71;
+    margin: auto;
+    /* top: 35px; */
+    z-index: -2;
+    left: 40px;
+    top: 35px;
+}
+
+#lb2
+{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.50;
+    margin: auto;
+    z-index: -3;
+    top: 45px;
+    left: 75px;
+}
+
+.rightgrid2
+{
+    width: 100%;
+    height: 70%;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 40px;
+    color: rgb(115, 77, 151);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 25px;
+
+}
+
+.label1
+{
+    color: rgb(115, 77, 151);
+    /* margin: auto;
+    margin-left: 10px;
+    margin-top: 20px; */
+    position: absolute;
+    margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 35px;
+    margin-left: 100px;
+}
+
+
+.rightgrid3
+{
+    background-image: url(./img/Group\ 5183-1.svg);
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    position: relative;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+.clockimg
+{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+.sun
+{
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.wake
+{
+    background-color: white;
+    font-size: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.setwakeup
+{
+    font-size: 25px;
+}
+
+.lunch
+{
+    border: 1px solid black;
+    font-size: 20px;
+    background-color: white; 
+}
+
+.nap
+{
+    border: 1px solid black;
+    font-size: 20px;
+    background-color: white; 
+}
+
+.night
+{
+    border: 1px solid black;
+    font-size: 20px;
+    background-color: white;
+}
+
+.time10
+{
+    /* position: relative; */
+    font-size: 20px;
+    width: 50%;
+    border-radius: 5px;
+    position:relative;
+    margin-left: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.time11
+{
+    font-size: 20px;
+    width: 50%;
+    border-radius: 5px;
+    position:relative;
+    margin-left: 22px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+
+.time12
+{
+    font-size: 20px;
+    width: 50%;
+    border-radius: 5px;
+    position:relative;
+    margin-left: 40px;
+    margin-right: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+
+.time13
+{
+    font-size: 20px;
+    width: 50%;
+    border-radius: 5px;
+    position:relative;
+    margin-left: 25px;
+    margin-right: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+.contain1
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.morning
+{
+    margin-top: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    color: white;
+    background-color: rgb(143, 85, 196);
+    border-radius:10px;
+    padding-top: 15px;
+    padding-left: 5px;
+    
+}
+
+#toggleBtn {
+    width: 300px;
+    height: 50px;
+}
+
+.alarmButton
+{
+    font-size: 30px;
+    border-radius: 8px;
+    width: 300px;
+    height: 50px;
+    background: rgb(238,174,202);
+    background: linear-gradient(132deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 120px;
+}
+
+.alarmButton:hover
+{
+    background: rgb(238,174,202);
+    background: linear-gradient(132deg, rgba(148,187,233,1) 0%, rgba(238,174,202,1) 100%);
+}
+
+
+#toggleBtn:hover .alarmButton {
+    display: none;
+}
+
+#toggleBtn:hover .alterButton {
+    display: block;
+}
+
+
+.alterButton
+{
+    font-size: 30px;
+    position: absolute;
+    bottom: 120px;
+    border-radius: 8px;
+    width: 300px;
+    height: 50px;
+    background: rgb(238,174,202);
+    background: linear-gradient(132deg, rgba(148,187,233,1) 0%, rgba(238,174,202,1) 100%);
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.clockmaster
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.hourglass
+{
+    
+    margin-left: 40px;
+    height: 85px;
+    width: 70px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(234, 225, 240);
+    
+    border-radius: 2px;
+    text-align: center;
+    
+}
+
+.minglass
+{
+    height: 85px;
+    width: 70px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;  
+    background-color: rgb(234, 225, 240);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.secglass
+{
+    height: 85px;
+    width: 70px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 10px;  
+    background-color: rgb(234, 225, 240);
+    text-align: center;
+    border-radius: 2px;
+}
+
+.timetext
+{
+    padding-right: 30px;
+    padding-left: 50px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dot
+{
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+.doublez
+{
+    margin-top: 1px;
+    margin-bottom: -15px;
+}
+
+.AMorPM
+{
+    display: flex;
+    height: 85px;
+    width: 70px;
+    font-size: 30px;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left: 10px;  
+    background-color: rgb(56, 177, 147);
+    border-radius: 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropb
+{
+    margin-top: 230px;
+    margin-left: 60px;
+    height: 30px;
+    width: 1.5px;
+     background-color: black;
+     position: absolute;
+}
+
+.dropb2
+{
+    margin-top: 320px;
+    margin-left: 60px;
+    height: 30px;
+    width: 1.5px;
+     background-color: black;
+     position: absolute; 
+}
+
+.dropb3
+{
+    margin-top: 410px;
+    margin-left: 60px;
+    height: 30px;
+    width: 1.5px;
+     background-color: black;
+     position: absolute; 
+}
+
+.details
+{
+    position:absolute;
+    background-color: rgb(208, 0, 255);
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    border-radius: 5px;
+    height: 120px;
+    justify-content: space-around;
+    padding-left: 7px;
+    margin-left: 480px;
+    margin-top: 620px;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
